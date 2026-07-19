@@ -1,0 +1,165 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+    width: 100%;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    font-family: 'Nunito';
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand {
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+    }
+
+.svg-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 20px;
+    background: white;
+}
+
+.preview-box {
+    width: 100%;
+    height: 250px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f8f8f8;
+}
+
+.svg-preview {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: white;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    font-family: monospace;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+    background: #f4f4f4;
+    padding: 12px;
+    border-radius: 8px;
+}
+.preview-box {
+    width: 100%;
+    height: 260px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.svg-preview-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.add-button {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+    background: black;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 36px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.add-button:hover {
+    background: #333;
+}
+.copy-btn {
+    margin: 10px 0;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+    background: #f4f4f4;
+    padding: 12px;
+    border-radius: 8px;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.home {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.home h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.home p {
+    color: #666;
+    margin-bottom: 24px;
+}

@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    SVG Code
+{% endblock %}
+
+{% block main %}
+    <h1>{{ svg.name }}</h1>
+
+    <div class="preview-box">
+        <img class="svg-preview-img" src="/svg/{{ svg.id }}" alt="{{ svg.name }}">
+    </div>
+
+    <h3>SVG Code</h3>
+
+    <pre class="code-box">{{ svg.svg_code }}</pre>
+
+    <a href="/">Back</a>
+{% endblock %}

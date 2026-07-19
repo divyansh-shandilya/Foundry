@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+
+    <a href="/add" class="add-button">+</a>
+    <br>
+    <br>
+    {% for svg in svgs %}
+        <div class="svg-card">
+            <h3>{{ svg.name }}</h3>
+
+            <div class="preview-box">
+                <img class="svg-preview-img" src="/svg/{{ svg.id }}" alt="{{ svg.name }}">
+            </div>
+
+            <details>
+                <summary>View SVG code</summary>
+                <button type="button"class="btn btn-sm btn-outline-secondary copy-btn"data-target="svg-code-{{ svg.id }}">Copy SVG code</button>
+                <pre>{{ svg.svg_code }}</pre>
+            </details>
+            <br>
+            <form action="/delete/{{ svg.id }}" method="post">
+                <button class="btn btn-danger btn-sm" type="submit">Delete</button>
+            </form>
+        </div>
+    {% endfor %}
+
+    <script>
+        document.querySelectorAll(".copy-btn").forEach(function(button) {
+            button.addEventListener("click", function() {
+                const targetId = button.dataset.target;
+                const codeElement = document.getElementById(targetId);
+                const svgCode = codeElement.textContent;
+
+                navigator.clipboard.writeText(svgCode).then(function() {
+                    button.textContent = "Copied!";
+
+                    setTimeout(function() {
+                        button.textContent = "Copy SVG code";
+                    }, 1500);
+                });
+            });
+        });
+    </script>
+{% endblock %}

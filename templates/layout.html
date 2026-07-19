@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+
+        <!-- http://getbootstrap.com/docs/5.3/ -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+        <!-- https://favicon.io/emoji-favicons/money-bag/ -->
+        <link href="/static/favicon.ico" rel="icon">
+
+        <link href="/static/styles.css" rel="stylesheet">
+
+        <title>Foundry: {% block title %}{% endblock %}</title>
+
+    </head>
+
+    <body>
+
+        <nav class="bg-light border navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                         viewBox="0 0 1024 1088"
+                         width="50"
+                         height="52"
+                         preserveAspectRatio="none">
+                        <path transform="translate(0,0)" fill="rgb(253, 192, 13)" d="M 849.707 375.398 C 855.03 374.589 862.594 375.472 867.866 376.281 C 868.613 439.504 864.716 500.235 858.72 563.078 C 854.895 603.163 853.218 637.088 842.816 676.605 C 839.049 698.033 835.161 718.226 828.295 739.001 C 803.635 813.62 749.167 881.373 682.735 923.238 C 651.13 943.155 552.637 981.052 514.64 979.935 C 508.847 979.983 503.104 980.241 497.394 979.297 L 497.191 977.68 C 501.271 969.837 517.266 960.045 525.23 953.316 C 536.407 943.873 541.484 936.783 551.059 926.536 C 590.019 885.444 609.525 837.499 624.659 784.165 C 635.126 747.276 637.229 733.198 638.199 694.755 C 638.826 669.144 639.075 643.524 638.945 617.906 C 639.023 582.415 640.036 547.366 639.918 511.877 C 639.828 484.815 635.624 444.729 638.158 418.825 C 646.321 412.486 694.606 404.748 707.066 402.237 C 720.593 399.512 738.184 394.655 751.769 392.42 C 767.377 389.851 784.357 388.659 800.256 385.724 C 816.702 382.688 833.323 377.071 849.707 375.398 z"/><path transform="translate(0,0)" fill="rgb(253, 135, 7)" d="M 398.488 953.828 C 449.884 886.143 452.204 812.822 452.209 731.955 C 452.365 701.201 452.113 670.447 451.451 639.701 C 451.311 634.419 449.757 612.408 452.37 608.477 C 455.42 603.889 573.083 578.219 585.638 576.501 C 593.098 575.481 600.311 574.676 607.846 575.321 C 616.252 727.768 601.667 900.099 444.517 967.441 C 437.267 970.548 428.644 975.265 421.104 977.177 L 420.84 975.791 C 416.607 975.735 414.774 978.248 410.483 977.96 C 405.946 977.655 407.226 969.117 405.606 967.036 C 402.101 962.535 399.057 966.68 394.744 961.529 C 396.619 959.669 400.606 956.786 401.138 954.786 L 398.488 953.828 z"/><path transform="translate(0,0)" fill="rgb(245,104,7)" d="M 397.495 757.052 C 405.731 756.837 406.948 765.264 407.095 772.244 C 408.306 829.78 407.982 895.43 368.216 941.465 C 345.13 968.191 313.791 984.552 280.447 994.816 C 272.291 997.297 253.379 997.154 244.043 997.943 C 239.817 998.179 237.462 998.477 234.527 996.018 C 233.684 988.508 234.299 973.952 234.401 965.914 C 234.62 948.881 234.74 931.847 234.761 914.812 L 234.867 842.365 C 234.831 827.689 234.217 809.351 235.31 795.041 C 273.653 778.222 320.502 777.31 360.639 764.603 C 371.299 761.228 385.542 760.727 397.495 757.052 z"/><path transform="translate(0,0)" fill="rgb(253, 192, 13)" d="M 725.907 129.613 C 776.134 126.576 819.283 164.897 822.201 215.131 C 825.119 265.365 786.697 308.424 736.457 311.223 C 686.383 314.013 643.499 275.747 640.591 225.68 C 637.682 175.614 675.847 132.639 725.907 129.613 z"/><path transform="translate(0,0)" fill="rgb(253, 135, 7)" fill-opacity="0.988235" d="M 398.488 953.828 L 401.138 954.786 C 400.606 956.786 396.619 959.669 394.744 961.529 C 399.057 966.68 402.101 962.535 405.606 967.036 C 407.226 969.117 405.946 977.655 410.483 977.96 C 414.774 978.248 416.607 975.735 420.84 975.791 L 421.104 977.177 C 415.145 980.091 404.95 982.131 398.165 985.213 C 390.091 988.88 367.176 997.814 360.209 990.175 C 360.255 989.299 360.309 988.274 360.371 987.098 C 365.489 983.165 374.441 976.548 378.929 972.804 C 385.898 966.958 392.435 960.617 398.488 953.828 z"/></svg>
+
+                    <h1 class="brand"><b>Foundry</b></h1>
+                </div></a>
+                <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    {% if session["user_id"] %}
+                        <ul class="navbar-nav ms-auto mt-2">
+                            <li class="nav-item"><a class="nav-link" href="/list">List</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/logout">Log_Out</a></li>
+                        </ul>
+                    {% else %}
+                        <ul class="navbar-nav ms-auto mt-2">
+                            <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/login">Log_In</a></li>
+                        </ul>
+                    {% endif %}
+                </div>
+            </div>
+        </nav>
+
+        {% if get_flashed_messages() %}
+            <header>
+                <div class="alert alert-primary mb-0 text-center" role="alert">
+                    {{ get_flashed_messages() | join(" ") }}
+                </div>
+            </header>
+        {% endif %}
+
+        <main class="container py-5 text-center">
+            {% block main %}{% endblock %}
+        </main>
+
+        <footer class="mb-5">
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    // Adapted from https://stackoverflow.com/a/10162353
+                    const html = '<!DOCTYPE ' +
+                    document.doctype.name +
+                    (document.doctype.publicId ? ' PUBLIC "' + document.doctype.publicId + '"' : '') +
+                    (!document.doctype.publicId && document.doctype.systemId ? ' SYSTEM' : '') +
+                    (document.doctype.systemId ? ' "' + document.doctype.systemId + '"' : '') +
+                    '>\n' + document.documentElement.outerHTML;
+                    document.querySelector('form[action="https://validator.w3.org/check"] > input[name="fragment"]').value = html;
+                });
+            </script>
+        </footer>
+
+    </body>
+
+</html>
